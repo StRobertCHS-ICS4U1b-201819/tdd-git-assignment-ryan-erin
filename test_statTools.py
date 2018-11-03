@@ -8,7 +8,9 @@ def test_mean():
     assert mean([]) == None
 
 def test_median():
-    pass
+    assert median([2,3,4,5,6,7,8,9,10]) == 6 # ODD
+    assert median([1,2,3,4,5,6,7,8,9,10]) == 5.5 # EVEN
+    assert median([]) == None
 def tests_mode():
     pass
 
