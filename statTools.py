@@ -16,5 +16,12 @@ def median(anyList):
             return (anyList[int(len(anyList) // 2)] + anyList[int(len(anyList) // 2 - 1)]) /2
     else:
         pass
-
-
+'''
+def mode(anyList):
+    if anyList != []:
+        for i in range(len(anyList)):
+        
+        return i
+    else:
+        pass
+        '''
