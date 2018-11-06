@@ -9,9 +9,9 @@ The functions you are responsible for implementing are:
 
 **Central Tendency**
 
-✅ mean
-✅ median
-✅ mode
+* mean ✅
+* median ✅
+* mode ✅
 
 **Spread**
 
