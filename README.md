@@ -9,9 +9,9 @@ The functions you are responsible for implementing are:
 
 **Central Tendency**
 
-* mean
-* median
-* mode
+* :heavy_check_mark:mean
+* :heavy_check_mark:median
+* :heavy_check_mark:mode
 
 **Spread**
 
