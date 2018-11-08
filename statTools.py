@@ -1,5 +1,11 @@
 def lower_quartile(intList):
-    return 2
+    first = 0
+    last = len(intList)
+    mid = (first+last) // 2
+    last = mid
+    mid = (first + last) // 2
+    midItem = intList[mid]
+    return midItem
 
 def upper_quartile():
     pass
