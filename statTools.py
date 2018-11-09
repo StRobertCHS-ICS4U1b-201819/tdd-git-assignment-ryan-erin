@@ -1,11 +1,14 @@
-def lower_quartile(intList):
+def lower_quartile(num_list):
     first = 0
-    last = len(intList)
-    mid = (first+last) // 2
-    last = mid
+    last = len(num_list)
     mid = (first + last) // 2
-    midItem = intList[mid]
-    return midItem
+    num_list = num_list[:mid]
+    mid = (first + mid) // 2
+    # check to see if the new list has an even or odd amount of numbers
+    if len(num_list) % 2 == 0:
+        return round((num_list[mid] + num_list[mid - 1])/2, 1)
+    else:
+        return num_list[mid]
 
 def upper_quartile():
     pass
