@@ -12,6 +12,7 @@ def test_sort_random2():
     assert(sort([7, 45, 4, 1, 8, 13, 9]) == [1, 4, 7, 8, 9, 13, 45])
 
 
+
 # lower quartile tests
 def test_lower_quartile_basic1():
     assert(lower_quartile([1, 2, 3, 4, 5, 6, 7]) == 2)
@@ -34,6 +35,7 @@ def test_lower_quartile_unsorted2():
 # this doesn't work because the way the function rounds numbers is so weird
 # def test_lower_quartile_decimals():
 #     assert(lower_quartile([1.9, 2.8, 3.7, 4.6, 5.5, 6.4, 7.3, 0]) == 2.4)
+
 
 
 # upper quartile tests
@@ -60,3 +62,18 @@ def test_variance_basic2():
 
 def test_variance_empty():
     assert(variance([]) == 0)
+
+
+
+# standard deviation tests
+def test_standard_deviation_basic1():
+    assert(standard_deviation([2, 3, 4, 7, 9]) == 2.6)
+
+def test_standard_deviation_basic2():
+    assert(standard_deviation([10, 2, 38, 23, 38, 23, 21]) == 12.3)
+
+def test_standard_deviation_basic3():
+    assert(standard_deviation([3, 4, 5, 5, 6, 7, 9]) == 1.8)
+
+def test_standard_deviation_decimals():
+    assert(standard_deviation([3.3, 4.2, 5.5, 2.3, 22, 5.9, 6.1]) == 6.2)

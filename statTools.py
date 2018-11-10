@@ -1,3 +1,5 @@
+import math
+
 def sort(num_list):
     new_list = []
     new_list.append(num_list[0])
@@ -16,6 +18,7 @@ def sort(num_list):
             new_list.insert(location, num_list[i])
     return new_list
 
+
 def lower_quartile(num_list):
     num_list = sort(num_list)
     first = 0
@@ -28,6 +31,7 @@ def lower_quartile(num_list):
         return round((num_list[mid] + num_list[mid - 1]) / 2, 1)
     else:
         return num_list[mid]
+
 
 def upper_quartile(num_list):
     num_list = sort(num_list)
@@ -44,11 +48,13 @@ def upper_quartile(num_list):
     else:
         return num_list[mid]
 
+
 def variance(num_list):
     if len(num_list) <= 1:
         return 0
     acc = 0
     answer = 0
+    # calculates mean
     for i in range(len(num_list)):
         acc += num_list[i]
     acc = acc/len(num_list)
@@ -58,5 +64,5 @@ def variance(num_list):
     # round variance to 3 decimal places
     return round(answer/len(num_list), 3)
 
-def standard_deviation():
-    pass
+def standard_deviation(num_list):
+    return round(math.sqrt(variance(num_list)), 1)
