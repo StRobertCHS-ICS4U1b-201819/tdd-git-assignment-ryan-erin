@@ -50,23 +50,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="1" />
-          <entry key="py" value="4" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
-          <entry key="Python" value="4" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="7985" />
+          <entry key="py" value="11321" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="7985" />
+          <entry key="Python" value="11321" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project" />
@@ -76,47 +76,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="56" column="15" lean-forward="true" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="53" />
-              <folding>
-                <marker date="1541995080233" expanded="true" signature="612:615" ph="..." />
-                <marker date="1541995080233" expanded="true" signature="674:1081" ph="..." />
-                <marker date="1541995080233" expanded="true" signature="1119:1909" ph="..." />
-                <marker date="1541995080233" expanded="true" signature="1942:2632" ph="..." />
-              </folding>
+            <state relative-caret-position="1666">
+              <caret line="98" column="52" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_statTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+            <state relative-caret-position="350">
+              <caret line="122" column="53" selection-start-line="122" selection-start-column="53" selection-end-line="122" selection-end-column="53" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1541995080239" expanded="true" signature="274:347" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="698:2127" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="1127:1209" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="1812:2110" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="2311:2394" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="2424:2498" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="2496:2497" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="2536:2590" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="2700:2870" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="2870:3312" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="2934:2939" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="3028:3033" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="3135:3198" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="3238:3243" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="3354:3359" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="3492:3497" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="3618:3684" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="3724:3729" ph="..." />
-                <marker date="1541995080239" expanded="true" signature="3856:3861" ph="..." />
+                <element signature="e#1#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,8 +117,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/statTools.py" />
         <option value="$PROJECT_DIR$/test_statTools.py" />
+        <option value="$PROJECT_DIR$/statTools.py" />
       </list>
     </option>
   </component>
@@ -241,7 +216,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22483222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -257,7 +231,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.3177305" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.40851063" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.38723403" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32970452" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -283,45 +257,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statTools.py">
+    <entry file="file://$PROJECT_DIR$/test_statTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="56" column="15" lean-forward="true" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="53" />
+        <state relative-caret-position="350">
+          <caret line="122" column="53" selection-start-line="122" selection-start-column="53" selection-end-line="122" selection-end-column="53" />
           <folding>
-            <marker date="1541995080233" expanded="true" signature="612:615" ph="..." />
-            <marker date="1541995080233" expanded="true" signature="674:1081" ph="..." />
-            <marker date="1541995080233" expanded="true" signature="1119:1909" ph="..." />
-            <marker date="1541995080233" expanded="true" signature="1942:2632" ph="..." />
+            <element signature="e#1#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_statTools.py">
+    <entry file="file://$PROJECT_DIR$/statTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1541995080239" expanded="true" signature="274:347" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="698:2127" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="1127:1209" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="1812:2110" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="2311:2394" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="2424:2498" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="2496:2497" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="2536:2590" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="2700:2870" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="2870:3312" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="2934:2939" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="3028:3033" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="3135:3198" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="3238:3243" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="3354:3359" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="3492:3497" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="3618:3684" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="3724:3729" ph="..." />
-            <marker date="1541995080239" expanded="true" signature="3856:3861" ph="..." />
-          </folding>
+        <state relative-caret-position="1666">
+          <caret line="98" column="52" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
         </state>
       </provider>
     </entry>
