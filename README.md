@@ -15,7 +15,7 @@ The functions you are responsible for implementing are:
 **Spread**
 
 - [x] range
-- [x]lower quartile
+- [x] lower quartile
 - [x] upper quartile
 - [x] variance
 - [x] standard deviation
