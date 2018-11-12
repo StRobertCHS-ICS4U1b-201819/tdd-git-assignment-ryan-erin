@@ -68,6 +68,12 @@ def test_variance_basic1():
 def test_variance_basic2():
     assert(variance([3, 4, 5, 5, 6, 7, 9]) == 3.388)
 
+def test_variance_decimals():
+    assert(variance([0, 1.1, 2.33333, 2.4, 3, 5.121212, 7.6, 738]) == 59079.252)
+
+def test_variance_negatives():
+    assert(variance([-32, -9, -3, -1, 2.7, 6.6, 23, 343]) == 13213.324)
+
 def test_variance_ZeroDivisionError():
     assert(variance([]) == "Cannot divide by zero")
 
@@ -92,5 +98,20 @@ def test_standard_deviation_basic2():
 def test_standard_deviation_basic3():
     assert(standard_deviation([3, 4, 5, 5, 6, 7, 9]) == 1.8)
 
-def test_standard_deviation_decimals():
+def test_standard_deviation_decimals1():
     assert(standard_deviation([3.3, 4.2, 5.5, 2.3, 22, 5.9, 6.1]) == 6.2)
+
+def test_standard_deviation_decimals2():
+    assert(standard_deviation([10.8, 2.927, 38.0, 23.00032, 38.11, 23.2, 21.342342,7]) == 12.3)
+
+def test_standard_deviation_negatives():
+    assert(standard_deviation([-5, -2, -95.4, -2121, -0.3, -57, 3, 12]) == 695.5)
+
+# def test_standard_deviation_TypeError():
+#     assert(standard_deviation([]) == "Cannot divide by zero")
+
+def test_standard_deviation_TypeError():
+    assert(standard_deviation("good nightio") == "A string was given instead of a number list")
+
+def test_standard_deviation_ValueError():
+    assert(standard_deviation([1]) == "Illegal list")

@@ -67,10 +67,6 @@ def variance(num_list):
             answer += (num_list[j] - acc) ** 2
         # round variance to 3 decimal places
         return round(answer/len(num_list), 3)
-    # except TypeError:
-    #     raise TypeError("A string was given instead of a number")
-    # except ValueError:
-    #     return "Illegal list"
     except ZeroDivisionError:
         return "Cannot divide by zero"
     except ValueError:
@@ -80,4 +76,13 @@ def variance(num_list):
 
 
 def standard_deviation(num_list):
-    return round(math.sqrt(variance(num_list)), 1)
+    try:
+        if len(num_list) == 1:
+            raise ValueError
+        return round(math.sqrt(variance(num_list)), 1)
+    # except ZeroDivisionError:
+    #     return "Cannot divide by zero"
+    except TypeError:
+        return "A string was given instead of a number list"
+    except ValueError:
+        return "Illegal list"
