@@ -8,18 +8,17 @@ Using Test-Driven Development, you will work with a partner to create a single p
 The functions you are responsible for implementing are:  
 
 **Central Tendency**
-
-* mean ✅
-* median ✅
-* mode ✅
+- [x] mean 
+- [x]median 
+- [x] mode 
 
 **Spread**
 
-* range
-* lower quartile
-* upper quartile
-* variance
-* standard deviation
+- [x] range
+- [x]lower quartile
+- [x] upper quartile
+- [x] variance
+- [x] standard deviation
 
 
 All functions take a list of integers as a parameter.  This list represents the data for which you are computing the specific measurement.  All functions return a single value.
