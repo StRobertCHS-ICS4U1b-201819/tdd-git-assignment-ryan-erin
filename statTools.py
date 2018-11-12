@@ -62,3 +62,14 @@ def mode(anyList):
     else:
         pass
 
+def rng(anyList):
+    """
+    returns the difference between the greatest value and the smallest value in the data
+    :param data: list of integers
+    :return: the difference between the biggest and smallest number in the list
+    """
+    anyList = typeChecker(anyList)
+    if anyList != []:
+        return max(anyList) - min(anyList)
+    else:
+        pass

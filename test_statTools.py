@@ -35,7 +35,7 @@ def test_median():
 def tests_mode():
     assert mode([1, 2, 3, 4, 4]) == [4] #  1 atom
     assert mode([1, 2, 2, 3, 3]) == [2, 3] # 2 atom
-    assert mode([1, 2, 3, 1, 2, 3]) == [1, 2, 3] # 3 atom
+    assert mode([1, 2, 3.3, 1, 2, 3.3]) == [1, 2, 3.3] # 3 atom
 
 # Corner Cases & Unusual Cases:
     assert mode([]) == None
@@ -46,6 +46,7 @@ def tests_mode():
 # ----------------------- Spread -------------------------
 
 
-def test_range():
-    pass
-
+def test_rng():
+    assert rng([1,2,3,4]) == 4 - 1
+    assert rng([]) == None
+    assert rng(12) == None
