@@ -38,16 +38,16 @@ def upper_quartile(num_list):
     num_list = sort(num_list)
     first = 0
     last = len(num_list)
+    mid = ((first + last) // 2)
     if len(num_list) % 2 == 0:
-        mid = ((first + last) // 2)
+        num_list = num_list[mid:]
     else:
-        mid = ((first + last) // 2) + 1
-    num_list = num_list[mid:]
-    mid = ((mid + first) // 2) - 1
+        num_list = num_list[mid + 1:]
+    mid = ((mid + first) // 2)
     # check to see if the new list has an even or odd amount of numbers
     if len(num_list) % 2 == 0:
         # if even, will calculate the mean of the two middle numbers
-        return round((num_list[mid] + num_list[mid + 1]) / 2, 1)
+        return round((num_list[mid] + num_list[mid - 1]) / 2, 1)
     else:
         return num_list[mid]
 

@@ -35,6 +35,9 @@ def test_lower_quartile_unsorted2():
 def test_lower_quartile_decimals():
     assert(lower_quartile([1.9, 2.8, 3.7, 4.6, 5.5, 6.4, 7.3, 0]) == 2.3)
 
+def test_lower_quartile_negatives():
+    assert(lower_quartile([-33, -2, -909, -22, -1, -5, 12, 9, 3.6]) == -27.5)
+
 
 
 # upper quartile tests
@@ -52,6 +55,9 @@ def test_upper_quartile_decimals1():
 
 def test_upper_quartile_decimals2():
     assert(upper_quartile([6.7, 8, 3, 2, 1, 0, 99]) == 8)
+
+def test_upper_quartile_negatives():
+    assert(upper_quartile([-1, -43, 3, 7, 50, -3, 5, 5, 1, 99]) == 7)
 
 
 
