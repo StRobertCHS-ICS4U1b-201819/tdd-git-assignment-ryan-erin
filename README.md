@@ -1,5 +1,5 @@
 # TDD & Git Assignment
-
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
 ## 1) Objective
 
@@ -9,9 +9,9 @@ The functions you are responsible for implementing are:
 
 **Central Tendency**
 
-* mean
-* median
-* mode
+* mean ✅
+* median ✅
+* mode ✅
 
 **Spread**
 
