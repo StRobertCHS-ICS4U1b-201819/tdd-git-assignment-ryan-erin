@@ -9,7 +9,7 @@ The functions you are responsible for implementing are:
 
 **Central Tendency**
 - [x] mean 
-- [x]median 
+- [x] median 
 - [x] mode 
 
 **Spread**
