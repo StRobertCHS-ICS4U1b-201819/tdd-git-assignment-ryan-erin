@@ -59,6 +59,12 @@ def test_upper_quartile_decimals2():
 def test_upper_quartile_negatives():
     assert(upper_quartile([-1, -43, 3, 7, 50, -3, 5, 5, 1, 99]) == 7)
 
+def test_upper_quartile_IndexError():
+    assert(upper_quartile([]) == "List index out of range")
+
+def test_upper_quartile_TypeError():
+    assert(upper_quartile("bonjour world") == "A numeric data type was not provided")
+
 
 
 # variance tests
@@ -84,7 +90,7 @@ def test_variance_ValueError2():
     assert(variance(["HELLLLLLOOO"]) == "Illegal list")
 
 def test_variance_TypeError():
-    assert(variance("HELLLLLLOOO") == "A string was given instead of a number list")
+    assert(variance("HELLLLLLOOO") == "A numeric data type was not provided")
 
 
 
@@ -107,11 +113,11 @@ def test_standard_deviation_decimals2():
 def test_standard_deviation_negatives():
     assert(standard_deviation([-5, -2, -95.4, -2121, -0.3, -57, 3, 12]) == 695.5)
 
-# def test_standard_deviation_TypeError():
+# def test_standard_deviation_ZeroDivisionError():
 #     assert(standard_deviation([]) == "Cannot divide by zero")
 
 def test_standard_deviation_TypeError():
-    assert(standard_deviation("good nightio") == "A string was given instead of a number list")
+    assert(standard_deviation("good nightio") == "A numeric data type was not provided")
 
 def test_standard_deviation_ValueError():
     assert(standard_deviation([1]) == "Illegal list")
