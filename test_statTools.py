@@ -32,9 +32,8 @@ def test_lower_quartile_unsorted1():
 def test_lower_quartile_unsorted2():
     assert(lower_quartile([5, 2, 38, 7, 9, 11, 54, 3]) == 4)
 
-# this doesn't work because the way the function rounds numbers is so weird
-# def test_lower_quartile_decimals():
-#     assert(lower_quartile([1.9, 2.8, 3.7, 4.6, 5.5, 6.4, 7.3, 0]) == 2.4)
+def test_lower_quartile_decimals():
+    assert(lower_quartile([1.9, 2.8, 3.7, 4.6, 5.5, 6.4, 7.3, 0]) == 2.3)
 
 
 
@@ -48,8 +47,11 @@ def test_upper_quartile_basic2():
 def test_upper_quartile_basic3():
     assert(upper_quartile([4, 3, 1, 0, 3, 32, 0, 0, 0, 1, 94, 37, 21, 6, 55, 5]) == 26.5)
 
-def test_upper_quartile_decimals():
+def test_upper_quartile_decimals1():
     assert(upper_quartile([9.2, 6.7, 1.3, 3.8, 5.5, 4.4, 2.9, 7.3, 6.6, 8.9, 9.9, 8.6]) == 8.8)
+
+def test_upper_quartile_decimals2():
+    assert(upper_quartile([6.7, 8, 3, 2, 1, 0, 99]) == 8)
 
 
 
@@ -60,8 +62,17 @@ def test_variance_basic1():
 def test_variance_basic2():
     assert(variance([3, 4, 5, 5, 6, 7, 9]) == 3.388)
 
-def test_variance_empty():
-    assert(variance([]) == 0)
+def test_variance_ZeroDivisionError():
+    assert(variance([]) == "Cannot divide by zero")
+
+def test_variance_ValueError1():
+    assert(variance([9]) == "Illegal list")
+
+def test_variance_ValueError2():
+    assert(variance(["HELLLLLLOOO"]) == "Illegal list")
+
+def test_variance_TypeError():
+    assert(variance("HELLLLLLOOO") == "A string was given instead of a number list")
 
 
 

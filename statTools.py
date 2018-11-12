@@ -28,6 +28,7 @@ def lower_quartile(num_list):
     mid = (first + mid) // 2
     # check to see if the new list has an even or odd amount of numbers
     if len(num_list) % 2 == 0:
+        # if even, will calculate the mean of the two middle numbers
         return round((num_list[mid] + num_list[mid - 1]) / 2, 1)
     else:
         return num_list[mid]
@@ -43,26 +44,40 @@ def upper_quartile(num_list):
         mid = ((first + last) // 2) + 1
     num_list = num_list[mid:]
     mid = ((mid + first) // 2) - 1
+    # check to see if the new list has an even or odd amount of numbers
     if len(num_list) % 2 == 0:
+        # if even, will calculate the mean of the two middle numbers
         return round((num_list[mid] + num_list[mid + 1]) / 2, 1)
     else:
         return num_list[mid]
 
 
 def variance(num_list):
-    if len(num_list) <= 1:
-        return 0
-    acc = 0
-    answer = 0
-    # calculates mean
-    for i in range(len(num_list)):
-        acc += num_list[i]
-    acc = acc/len(num_list)
+    try:
+        if len(num_list) == 1:
+            raise ValueError
+        acc = 0
+        answer = 0
+        # calculates the mean of the number list
+        for i in range(len(num_list)):
+            acc += num_list[i]
+        acc = acc/len(num_list)
 
-    for j in range(len(num_list)):
-        answer += (num_list[j] - acc) ** 2
-    # round variance to 3 decimal places
-    return round(answer/len(num_list), 3)
+        for j in range(len(num_list)):
+            answer += (num_list[j] - acc) ** 2
+        # round variance to 3 decimal places
+        return round(answer/len(num_list), 3)
+    # except TypeError:
+    #     raise TypeError("A string was given instead of a number")
+    # except ValueError:
+    #     return "Illegal list"
+    except ZeroDivisionError:
+        return "Cannot divide by zero"
+    except ValueError:
+        return "Illegal list"
+    except TypeError:
+        return "A string was given instead of a number list"
+
 
 def standard_deviation(num_list):
     return round(math.sqrt(variance(num_list)), 1)
