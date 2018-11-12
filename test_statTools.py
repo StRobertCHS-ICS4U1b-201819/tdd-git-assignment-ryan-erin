@@ -1,6 +1,6 @@
 from statTools import *
 
-# Central Tendency
+# ---------------   Central Tendency ---------------------
 
 def test_typeChecker():
     assert typeChecker(12) == [] # int
@@ -43,7 +43,7 @@ def tests_mode():
     assert mode(map(lambda x: [x],[1])) == None
 
 
-# Spread
+# ----------------------- Spread -------------------------
 
 
 def test_range():
